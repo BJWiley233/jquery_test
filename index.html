@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery UI Accordion - Collapse content</title>
+	<link rel="stylesheet" href="node_modules/jquery-ui-dist/jquery-ui.theme.min.css">
+	<script src="node_modules/jquery-ui-dist/external/jquery/jquery.js"></script>
+    <script src="node_modules/jquery-ui-dist/jquery-ui.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+	<script>
+		$(function(){
+			$( "#accordion" ).accordion({
+				collapsible: true
+			});
+        })
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").hide();
+            });
+        });
+    </script>
+    <button>Click me to hide paragraphs</button>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+</head>
